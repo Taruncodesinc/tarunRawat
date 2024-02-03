@@ -1,19 +1,29 @@
-/* Global styles */
-body {
-  background-color: #1E212B;
-  margin: 0; /* Reset default margin */
-  padding: 0; /* Reset default padding */
+
+
+.container {
+    position: relative;
+    z-index: 1;
 }
 
-/* Profile picture and text info */
+.particle {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: transparent;
+    pointer-events: none;
+}
+
+
+
 .profile-info {
   display: flex;
   align-items: center;
 }
 
 .gif-img {
-  width: 100px ;/* Make the GIF fill the container */
-  height: 100px; /* Maintain aspect ratio */
+  width: 100px ;
+  height: 100px; 
   border-radius: 50%;
   position:absolute;
  
@@ -23,14 +33,14 @@ body {
 
 .text-info {
   text-align: right;
-  margin-left: 20px; /* Add some space between the profile picture and text */
+  margin-left: 20px; 
 }
 
 /* Font styles */
 .name {
   font-family: 'Sacramento', cursive;
   font-size: 3em;
-  margin-bottom: 0; /* Reset margin */
+  margin-bottom: 0;
   font-weight: 500;
   color: gold;
 }
@@ -92,8 +102,8 @@ body {
 
 .hero {
   background-image: url('spd3.webp');
-  background-size: cover; /* Ensure the background covers the entire area */
-  background-position: center; /* Center the background image */
+  background-size: cover;
+  background-position: center; 
   width: 100vw;
  
   display: flex;
@@ -278,6 +288,8 @@ a:hover {
   }
 }
 
+  
+
 #scrollButton {
   display: none;
   position: fixed;
@@ -290,7 +302,9 @@ a:hover {
   border-radius: 50%;
   color: red;
 }
-
+#scrollButton .btn1 {
+    font-size: 24px; 
+  }
 #scrollButton.show {
   display: block;
 }
