@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Tarun Rawat - Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/a0e9896cf1.js" crossorigin="anonymous"></script>
+
+<!--GOOGLE FONTS-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&family=Cinzel&family=Inter&family=Exo+2&family=Nova+Square&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="icon" type="image/png" href="favicon (1).ico">
+Insert the following HTML code between the <head> </head> tags:
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+
+
+
+
+</head>
+<style>
+ body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+           
+            position: relative;
+        }
+
+        canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1; /* Place canvas behind other content */
+            width: 100%;
+            height: 100%;
+        }
+
+        .container {
+            position: relative;
+            z-index: 1; /* Ensure other content is on top of the canvas */
+        }
+
+        .particle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background-color: transparent;
+            pointer-events: none; /* Prevent particles from blocking interactions */
+        }
+ 
+</style>
+<body>
+ 
+
+  <canvas id="canvas">
+    
+</canvas>
+<div class="container" >
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-sm-4 ">
+                <div class="profile-info">
+                    <div class="img1gif">
+                        <img src="]kill.gif" alt="Animated GIF" class="gif-img">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 "> <!-- Adjusted to align text and gif vertically -->
+                
+                <div class="profile-info" style="justify-content: right;"> <!-- Adjusted to align text to the right -->
+                    <div class="text-info">
+                      
+
+                        <h1 class="name">Tarun Rawat</h1>
+                        <p class="tagline">Competitive Programmer | Front-end</p>
+                        <p class="quote">"I see this spark in you. It's amazing. Whatever you choose to do with it, you'll be great."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <nav class="navbar navbar-expand-lg bg-custom">
+        <div class="container-fluid justify-content-around">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#abt">Who am I?</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#wid">What I do?</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#ct">Reach Me</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    
+    <hr class="vertical-line">
+</div>
+
+    <div class="hero">
+<div class="notepad" id="abt">
+    <div class="circles">
+      <div class="circle red"></div>
+      <div class="circle green"></div>
+      <div class="circle yellow"></div>
+    </div>
+    <div class="content">
+        <!-- Information about yourself goes here -->
+        <h4 class="h3-hi">👋 Hi! I'm <span class="h3-hero">TARUN RAWAT💫</span></h4>
+        <p>I'm pursuing a bachelor's degree in computer science at CGCJ right now, but I have no specific projects in mind—I'm just interested in<span class="imp1"> machine learning ✨</span></p>
+        <ul>
+          <li>C/C++</li>
+          <li>Python</li>
+          <li>Web3</li>
+        </ul>
+        <p>You can find me at:</p>
+        <ul>
+          <li>Leetcode as: <a href="https://leetcode.com/rawatt046/" target="_blank">rawatt046</a></li>
+          <li>GeeksForGeeks: <a href="https://auth.geeksforgeeks.org/user/rawatt046" target="_blank">rawatt046</a></li>
+          <li>HackerRank: <a href="https://www.hackerrank.com/profile/MMLP2Dev" target="_blank">MMLP2Dev</a></li>
+        </ul>
+      </div>
+  </div>
+    </div>
+
+  <section class="what-i-do  text-light py-5" id="wid">
+    <div class="container">
+     
+      <h2 class="section-heading text-center mb-4">Nothing 😢</h2>
+      
+      <div class="content text-center">
+        <p class="lead">I am currently learning new things, so I don't have any particular projects to work on. As a result, I spend most of my time browsing the <b><span style="color: gold;">INTERNET</span></b>. However, I am always open to <span style="color: #B118C8;">collaborative</span> work.
+
+
+
+
+
+
+      </div>
+    </div>
+  </section>
+  
+  <script>  
+  
+  const canvas = document.getElementById('canvas');
+  const ctx = canvas.getContext('2d');
+
+  // Set canvas size to match window size
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+
+  const particles = [];
+
+  class Particle {
+    constructor(x, y, radius, color, velocity) {
+      this.x = x;
+      this.y = y;
+      this.radius = radius;
+      this.color = color;
+      this.velocity = velocity;
+    }
+
+    draw() {
+      ctx.beginPath();
+      ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+      ctx.fillStyle = this.color;
+      ctx.fill();
+      ctx.closePath();
+    }
+
+    update() {
+      this.draw();
+      this.x += this.velocity.x;
+      this.y += this.velocity.y;
+    }
+  }
+
+  function init() {
+    for (let i = 0; i < 100; i++) {
+      const radius = Math.random() * 2 + 1;
+      const x = Math.random() * (canvas.width - radius * 2) + radius;
+      const y = Math.random() * (canvas.height - radius * 2) + radius;
+      const color = 'white';
+      const velocity = {
+        x: (Math.random() - 0.5) * 2,
+        y: (Math.random() - 0.5) * 2
+      };
+      particles.push(new Particle(x, y, radius, color, velocity));
+    }
+  }
+
+  function animate() {
+    requestAnimationFrame(animate);
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    particles.forEach(particle => {
+      particle.update();
+      if (
+        particle.x + particle.radius < 0 ||
+        particle.x - particle.radius > canvas.width ||
+        particle.y + particle.radius < 0 ||
+        particle.y - particle.radius > canvas.height
+      ) {
+        particle.x = Math.random() * canvas.width;
+        particle.y = Math.random() * canvas.height;
+      }
+    });
+  }
+
+  init();
+  animate();
+</script>
+
+<hr class="shadowed-hr">
+<footer>
+
+  <div class="footer" id="ct">
+  <div class="row">
+  <p> Contact Me !!!!</p>
+  <ul>
+    <li>
+      <a href="https://www.instagram.com/tarunrawat_1/"><i class="fa fa-instagram"></i></a>
+    </li>
+    <li>
+      <a href="mailto:rawatt046@gmail.com"><i class="fa fa-envelope"></i></a>
+    </li>
+    <li>
+      <a href="https://open.spotify.com/user/31srxzxkv4wgfsfvxqmwmubspm6q" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+    </li>
+  </ul>
+
+    
+  
+  <p><img src="fun.gif">
+  </p>
+ 
+ 
+
+
+  <ul>
+    <li>
+      <p class="text-center">
+        © TARUN RAWAT @2023  </p>
+    </li>
+  </ul>
+  
+  
+ 
+  
+  
+  
+  </div>
+  </footer>
+  <button onclick="scrollToTop()" id="scrollButton">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+  
+  
+  <script>
+    window.onscroll = function() {scrollFunction()};
+    
+    function scrollFunction() {
+      var scrollButton = document.getElementById("scrollButton");
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollButton.classList.add("show");
+      } else {
+        scrollButton.classList.remove("show");
+      }
+    }
+    
+    function scrollToTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    </script>
+    
+  
+
+
+</body>
+</html>
+
+
+
