@@ -64,24 +64,19 @@ function animate() {
 init();
 animate();
 
-function scrollToTop() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-
-
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  var scrollButton = document.getElementById("scrollButton");
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    scrollButton.classList.add("show");
-  } else {
-    scrollButton.classList.remove("show");
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    var scrollButton = document.getElementById("scrollButton");
+    if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
+      // User has scrolled to the bottom of the page
+      scrollButton.classList.add("show");
+    } else {
+      scrollButton.classList.remove("show");
+    }
   }
-}
-
-function scrollToTop() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
+  
+  function scrollToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
