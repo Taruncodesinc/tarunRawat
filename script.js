@@ -76,11 +76,8 @@ function scrollFunction() {
 }
 
 function scrollToTop() {
-  // Check if the clicked element has the 'fa-github' class
-  if (event.target.classList.contains('fa-github')) {
-    // If the clicked element is the GitHub icon, return early and do not scroll to top
-    return;
-  }
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
+  window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+  });
 }
