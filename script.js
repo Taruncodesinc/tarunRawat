@@ -64,18 +64,23 @@ function animate() {
 init();
 animate();
 
-   window.onscroll = function() {scrollFunction()};
-    
-    function scrollFunction() {
-      var scrollButton = document.getElementById("scrollButton");
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        scrollButton.classList.add("show");
-      } else {
-        scrollButton.classList.remove("show");
-      }
-    }
-    
-    function scrollToTop() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
+ window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  var scrollButton = document.getElementById("scrollButton");
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollButton.classList.add("show");
+  } else {
+    scrollButton.classList.remove("show");
+  }
+}
+
+function scrollToTop() {
+  // Check if the clicked element has the 'fa-github' class
+  if (event.target.classList.contains('fa-github')) {
+    // If the clicked element is the GitHub icon, return early and do not scroll to top
+    return;
+  }
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
