@@ -66,9 +66,11 @@ animate();
 
   window.onscroll = function() {scrollFunction()};
   
+  window.onscroll = function() {scrollFunction()};
+  
   function scrollFunction() {
     var scrollButton = document.getElementById("scrollButton");
-    if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
+    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
       // User has scrolled to the bottom of the page
       scrollButton.classList.add("show");
     } else {
